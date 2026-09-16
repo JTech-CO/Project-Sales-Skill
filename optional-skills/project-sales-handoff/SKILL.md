@@ -3,7 +3,7 @@ name: project-sales-handoff
 description: Prepare a sales conversation handoff, booking-link reply, or CRM update proposal from an existing conversation. Use for qualified handoff and booking evidence; not unilateral calendar invitations.
 license: MIT
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
   language: "en"
   execution: "draft-only"
 ---

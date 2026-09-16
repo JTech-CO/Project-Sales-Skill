@@ -1,0 +1,26 @@
+{
+  "version": "0.1.2",
+  "page": "../index.html",
+  "page_sha256": "c7adff9e24cd22fae42612d16e067adc6ad61e09a7c99980f72ed14425e53b8d",
+  "mode": "Actual Chromium rendering via Playwright Page.set_content",
+  "browser": "144.0.7559.96",
+  "theme": "dark",
+  "highlight": "#76dba3",
+  "images": [
+    {
+      "locale": "en",
+      "file": "intro-en.png",
+      "width": 1440,
+      "height": 870,
+      "sha256": "2f45bf1e21608e1a76988281939fd09126108954dc7aa6615a5e38cd52e0f8a0"
+    },
+    {
+      "locale": "ko",
+      "file": "intro-kr.png",
+      "width": 1440,
+      "height": 850,
+      "sha256": "8aa006868a42d156ca5a5447b542529a30154c12f24e514cb7fa874639441f93"
+    }
+  ],
+  "live_site_capture": false
+}

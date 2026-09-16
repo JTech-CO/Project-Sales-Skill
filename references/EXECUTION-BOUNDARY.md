@@ -1,6 +1,6 @@
 # Execution boundary
 
-## Shipped in 0.1.1
+## Shipped in 0.1.2
 
 Project Sales Skill produces analysis, drafts, and handoff or action proposals. It includes local installation/data helpers and a JavaScript context/read bridge. It does not include a remote draft writer, message sender, CRM writer, calendar writer, scheduler, account authentication, or a production approval service.
 

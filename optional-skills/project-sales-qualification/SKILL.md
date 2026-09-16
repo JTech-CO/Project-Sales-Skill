@@ -3,7 +3,7 @@ name: project-sales-qualification
 description: Evaluate B2B prospect lists or research supplied company candidates using authorized sources. Use for fit, exclusions, contact provenance, and verification gaps; not outreach execution.
 license: MIT
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
   language: "en"
   execution: "draft-only"
 ---

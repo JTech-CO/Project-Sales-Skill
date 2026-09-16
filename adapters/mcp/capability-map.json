@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.1",
+  "schema_version": "0.1.2",
   "status": "integration-contract-not-a-running-server",
   "execution": "draft-only",
   "capabilities": [

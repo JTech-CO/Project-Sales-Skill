@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "additionalProperties": false,
-  "$id": "urn:project-sales:action-proposal:0.1.1",
+  "$id": "urn:project-sales:action-proposal:0.1.2",
   "title": "Project Sales action proposal",
   "properties": {
     "schema_version": {
-      "const": "0.1.1"
+      "const": "0.1.2"
     },
     "status": {
       "const": "proposal_only"

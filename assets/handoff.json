@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.1",
+  "schema_version": "0.1.2",
   "handoff_id": "handoff-example-001",
   "project_ref": "project-example",
   "thread_ref": "thread-example-001",

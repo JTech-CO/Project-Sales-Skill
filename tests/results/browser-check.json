@@ -1,9 +1,21 @@
 {
   "mode": "Chromium DOM rendering via Playwright Page.set_content",
-  "version": "0.1.1",
-  "passed": 42,
+  "version": "0.1.2",
+  "passed": 46,
   "failed": 0,
   "checks": [
+    {
+      "name": "Default dark background",
+      "status": "passed"
+    },
+    {
+      "name": "Green accent token",
+      "status": "passed"
+    },
+    {
+      "name": "Primary CTA has dark text on green",
+      "status": "passed"
+    },
     {
       "name": "English default without stored preference",
       "status": "passed"
@@ -154,6 +166,10 @@
     },
     {
       "name": "Repository CTAs use the requested destination",
+      "status": "passed"
+    },
+    {
+      "name": "Print uses a readable paper palette",
       "status": "passed"
     },
     {

@@ -1,27 +1,27 @@
 {
-  "release": "0.1.1",
+  "version": "0.1.2",
+  "recursive_content_entries_checked": 160,
   "legacy_reference_matches": 0,
-  "scope": "Source paths and text, recursively expanded distribution contents and ZIP metadata; independent identity/provenance documents reviewed",
-  "scanned_records": 202,
-  "archives": [
+  "stale_active_version_matches": 0,
+  "installation_archives": [
     {
-      "path": "dist/project-sales-core.zip",
-      "entries": 19,
-      "crc": "passed"
+      "file": "project-sales-core.zip",
+      "members": 19,
+      "crc_ok": true,
+      "self_contained_local_links": 25,
+      "readme_images_included": false,
+      "bytes": 23471
     },
     {
-      "path": "dist/project-sales-specialists.zip",
-      "entries": 30,
-      "crc": "passed"
+      "file": "project-sales-specialists.zip",
+      "members": 30,
+      "crc_ok": true,
+      "self_contained_local_links": 12,
+      "readme_images_included": false,
+      "bytes": 24014
     }
   ],
-  "standalone_skill_metadata_and_links": [
-    "project-sales",
-    "project-sales-discovery",
-    "project-sales-handoff",
-    "project-sales-outreach",
-    "project-sales-qualification",
-    "project-sales-review",
-    "project-sales-triage"
-  ]
+  "python_310_syntax_checked": true,
+  "readme_image_paths": "repository-relative",
+  "notes": "Historical changelog version headings are retained. Full release archive CRC and manifest integrity are checked after final packaging."
 }

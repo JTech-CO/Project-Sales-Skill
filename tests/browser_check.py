@@ -40,6 +40,9 @@ def run(executable: str, screenshots: Path | None = None) -> dict:
         page.set_content(html,wait_until='load')
         config=page.locator('#site-data').text_content()
         data=json.loads(config)
+        check('Default dark background',lambda:equal(page.evaluate('getComputedStyle(document.body).backgroundColor'),'rgb(16, 22, 19)'))
+        check('Green accent token',lambda:equal(page.evaluate('getComputedStyle(document.documentElement).getPropertyValue("--accent").trim()'),'#76dba3'))
+        check('Primary CTA has dark text on green',lambda:equal(page.locator('.hero .button.primary').evaluate('(e)=>getComputedStyle(e).color'),'rgb(12, 36, 23)'))
         check('English default without stored preference',lambda:equal(page.locator('html').get_attribute('lang'),'en'))
         for locale in ('en','ko'):
             page.locator('#lang-'+locale).click()
@@ -54,6 +57,7 @@ def run(executable: str, screenshots: Path | None = None) -> dict:
                     page.evaluate('document.documentElement.scrollWidth')<=w,'Horizontal page overflow'))
                 if screenshots and width in (390,1440):
                     screenshots.mkdir(parents=True,exist_ok=True)
+                    page.evaluate('window.scrollTo({top:0,behavior:"instant"})')
                     page.screenshot(path=str(screenshots/f'{width}-{locale}.png'),full_page=True)
             for key in ('discover','draft','reply'):
                 page.locator(f'[data-scenario="{key}"]').click()
@@ -117,6 +121,9 @@ def run(executable: str, screenshots: Path | None = None) -> dict:
         page.emulate_media(reduced_motion='reduce')
         check('Reduced-motion scrolling',lambda:equal(page.evaluate('getComputedStyle(document.documentElement).scrollBehavior'),'auto'))
         check('Repository CTAs use the requested destination',lambda:yes(page.locator('a[href="'+data['repository']+'"]').count()>=3))
+        page.emulate_media(media='print')
+        check('Print uses a readable paper palette',lambda:equal(page.evaluate('getComputedStyle(document.body).backgroundColor'),'rgb(255, 255, 255)'))
+        page.emulate_media(media='screen')
         check('No runtime asset requests',lambda:equal([url for url in requests if not url.startswith('blob:')],[]))
         check('No uncaught JavaScript errors',lambda:equal(errors,[]))
         # A restricted-storage browser must still support manual language changes.
@@ -133,7 +140,7 @@ def run(executable: str, screenshots: Path | None = None) -> dict:
             yes(not fallback.locator('#copy-lite').is_visible()),
             equal(fallback.locator('#lite-text').input_value(),data['lite']['en'])))
         nojs.close();context.close();browser.close()
-    return {'mode':'Chromium DOM rendering via Playwright Page.set_content','version':'0.1.1',
+    return {'mode':'Chromium DOM rendering via Playwright Page.set_content','version':'0.1.2',
             'passed':sum(r['status']=='passed' for r in results),
             'failed':sum(r['status']=='failed' for r in results), 'checks':results,
             'not_verified':['HTTP/file URL navigation','Clipboard read-back to the operating system','Native localStorage persistence and URL deep-linking','Other browser engines and operating systems','Live repository navigation or deployment'],

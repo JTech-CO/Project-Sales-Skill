@@ -38,3 +38,15 @@ python tests/browser_check.py --chromium /path/to/chromium
 It renders the complete HTML with `Page.set_content`, tests actual UI events, responsive widths, keyboard behavior, blocked-copy handling, and byte-exact browser Blob downloads. It does not validate HTTP/file navigation, native language-preference persistence, or OS clipboard read-back. The default output is `tests/results/browser-check.json`. `--screenshots /path/to/output` optionally saves rendered previews outside the package.
 
 Do not count fixture validation or a simulated error path as a live provider/model test. [VALIDATION.md](../VALIDATION.md) distinguishes each executed check and unavailable validation.
+
+## Dark theme and README visuals
+
+The site-source tests also check the published website URL, default dark/green palette, actual CSS token contrast, local image targets, SVG badge metadata, screenshot hashes/dimensions, and the absence of README images from installation ZIPs. Rendered checks cover the dark page, green CTA, and paper print palette.
+
+Regenerate actual page captures before the source tests when the HTML changes:
+
+```sh
+python scripts/capture_previews.py --chromium /path/to/chromium
+```
+
+The source hash in `images/preview-info.json` must match the current `index.html`. The EN/KR README illustrations are real local page captures, not live-site captures. GitHub's production Markdown rendering is not part of the local tests.

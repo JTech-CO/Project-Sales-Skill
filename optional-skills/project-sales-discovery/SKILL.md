@@ -3,7 +3,7 @@ name: project-sales-discovery
 description: Understand a product and propose evidence-linked B2B customer segments. Use for product positioning, offer clarity, ICP, and exclusion criteria; not prospect contact lookup or sending.
 license: MIT
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
   language: "en"
   execution: "draft-only"
 ---

@@ -25,22 +25,28 @@ test_multiline_text_remains_one_record (test_local_tools.NormalizeTests.test_mul
 test_no_permission_or_verification_inferred (test_local_tools.NormalizeTests.test_no_permission_or_verification_inferred) ... ok
 test_plus_tag_preserved (test_local_tools.NormalizeTests.test_plus_tag_preserved) ... ok
 test_short_field_count (test_local_tools.NormalizeTests.test_short_field_count) ... ok
+test_actual_preview_files_match_the_page_and_manifest (test_site.SiteTests.test_actual_preview_files_match_the_page_and_manifest) ... ok
 test_all_scenarios_have_both_languages (test_site.SiteTests.test_all_scenarios_have_both_languages) ... ok
 test_all_setup_environments_have_both_languages (test_site.SiteTests.test_all_setup_environments_have_both_languages) ... ok
+test_badges_are_well_formed_and_versioned (test_site.SiteTests.test_badges_are_well_formed_and_versioned) ... ok
+test_default_dark_theme_and_green_highlight (test_site.SiteTests.test_default_dark_theme_and_green_highlight) ... ok
 test_embedded_lite_matches_source_bytes (test_site.SiteTests.test_embedded_lite_matches_source_bytes) ... ok
 test_external_new_tabs_have_safe_rel (test_site.SiteTests.test_external_new_tabs_have_safe_rel) ... ok
 test_license_in_every_installable_skill (test_site.SiteTests.test_license_in_every_installable_skill) ... ok
 test_minimum_accessibility_source_hooks (test_site.SiteTests.test_minimum_accessibility_source_hooks) ... ok
 test_no_external_runtime_assets (test_site.SiteTests.test_no_external_runtime_assets) ... ok
 test_no_script_initial_lite_is_complete (test_site.SiteTests.test_no_script_initial_lite_is_complete) ... ok
+test_published_website_metadata (test_site.SiteTests.test_published_website_metadata) ... ok
+test_readme_visuals_and_live_links (test_site.SiteTests.test_readme_visuals_and_live_links) ... ok
 test_repository_ctas_and_guides_match_package (test_site.SiteTests.test_repository_ctas_and_guides_match_package) ... ok
 test_single_main_heading_and_landmark (test_site.SiteTests.test_single_main_heading_and_landmark) ... ok
 test_six_independent_capabilities (test_site.SiteTests.test_six_independent_capabilities) ... ok
 test_text_palette_contrast (test_site.SiteTests.test_text_palette_contrast) ... ok
 test_unique_ids_and_real_fragment_targets (test_site.SiteTests.test_unique_ids_and_real_fragment_targets) ... ok
 test_version_sync (test_site.SiteTests.test_version_sync) ... ok
+test_visuals_are_not_in_installable_skill_archives (test_site.SiteTests.test_visuals_are_not_in_installable_skill_archives) ... ok
 
 ----------------------------------------------------------------------
-Ran 41 tests in 0.639s
+Ran 47 tests in 0.646s
 
 OK

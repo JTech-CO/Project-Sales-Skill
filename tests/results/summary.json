@@ -1,28 +1,26 @@
 {
-  "release": "0.1.1",
-  "date": "2026-09-17",
+  "version": "0.1.2",
+  "release_date": "2026-09-17",
   "environment": {
     "python": "3.13.5",
     "node": "v22.16.0",
-    "os": "Linux-6.18.44-x86_64-with-glibc2.41",
-    "chromium": "Chromium 144.0.7559.96 built on Debian GNU/Linux 13 (trixie)"
+    "os": "Linux x86_64",
+    "chromium": "144.0.7559.96"
   },
-  "python_unit_tests": {
-    "passed": 41,
-    "failed": 0,
-    "breakdown": {
-      "existing_local_helpers": 27,
-      "site_and_release_source": 14
-    }
+  "python_tests": {
+    "local_tools": 27,
+    "site_release_visuals": 20,
+    "passed": 47,
+    "failed": 0
   },
-  "node_unit_tests": {
+  "javascript_tests": {
     "passed": 21,
     "failed": 0
   },
-  "browser": {
-    "passed": 42,
+  "browser_checks": {
+    "passed": 46,
     "failed": 0,
-    "mode": "Page.set_content; real rendered DOM and Blob downloads"
+    "mode": "Playwright Page.set_content"
   },
   "schemas": {
     "ok": true,
@@ -33,10 +31,22 @@
     "openai_ui_metadata": 7,
     "authorization_or_truth_verified": false
   },
-  "model_evaluations": {
-    "fixtures": 30,
-    "status": "not_run"
+  "readme_visuals": {
+    "preview_images": 2,
+    "local_svg_badges": 3,
+    "local_markdown_previews_rendered": 2,
+    "all_preview_images_loaded": true,
+    "github_production_rendering_verified": false
   },
-  "remote_writes": false,
-  "deployed": false
+  "model_evaluation_cases": 30,
+  "model_evaluations_executed": 0,
+  "repository_modified": false,
+  "site_deployed": false,
+  "not_verified": [
+    "HTTP/file navigation",
+    "Native localStorage persistence",
+    "Clipboard OS read-back",
+    "Other browser engines or operating systems",
+    "Live providers, models, or native host UI"
+  ]
 }

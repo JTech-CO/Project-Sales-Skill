@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.1",
+  "schema_version": "0.1.2",
   "evidence_id": "evidence-example-001",
   "claim": "The supplied fictional product brief describes Markdown export.",
   "kind": "user_supplied",
