@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.2 | 2026-09-17
+
+- Switched the self-contained introduction to a dark theme with green highlights, readable muted text, and contrasting controls.
+- Added the published introduction URL to both README headers, screenshot links, package metadata, canonical metadata, and site notes.
+- Shortened EN/KR READMEs into a visual overview with actual page captures, three local status badges, a six-skill summary, and direct quick-start routes.
+- Kept README images outside installable skill assets, so the core and specialist ZIPs stay lightweight.
+- Preserved EN/KR switching, task examples, environment tabs, byte-exact LITE copy/download, the repository CTA, and the existing draft-only scope.
+- Synchronized release metadata, schemas, samples, and skill versions; rebuilt distributions, regression records, and checksums.
+
 ## 0.1.1 | 2026-09-17
 
 - Reworked product identity, provenance, contact-context, implementation-security, and outcome-review documents around the independent Project Sales Skill package.

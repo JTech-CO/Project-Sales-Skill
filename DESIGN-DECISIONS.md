@@ -1,4 +1,4 @@
-# Project Sales Skill | Release decisions 0.1.1
+# Project Sales Skill | Release decisions 0.1.2
 
 This is a maintenance record, not required runtime context.
 
@@ -23,7 +23,7 @@ The router loads only relevant references. LITE works without other files. Devel
 
 ## Release compatibility
 
-The core and specialist names, installation commands, and JavaScript function signatures are unchanged. Package metadata, skill metadata, module output, JSON Schema identifiers, and example `schema_version` values are updated to 0.1.1. When importing an older structured record, explicitly validate or migrate it to the current schema; a version update does not verify its contents.
+The core and specialist names, installation commands, and JavaScript function signatures are unchanged. Package metadata, skill metadata, module output, JSON Schema identifiers, and example `schema_version` values are updated to 0.1.2. When importing an older structured record, explicitly validate or migrate it to the current schema; a version update does not verify its contents.
 
 ## Execution boundary
 

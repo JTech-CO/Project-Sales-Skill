@@ -3,7 +3,7 @@ name: project-sales
 description: "Help with evidence-grounded B2B sales tasks: product/ICP discovery, prospect qualification, outreach drafts, reply triage, meeting handoff, and campaign review. Use one capability or combine only what the request needs. Not for bulk sending, consumer targeting, political persuasion, or unrelated copywriting."
 license: MIT
 metadata:
-  version: "0.1.1"
+  version: "0.1.2"
   language: "en"
   execution: "draft-only"
 ---
