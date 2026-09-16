@@ -1,0 +1,32 @@
+test_batch_preflight_avoids_partial_install (test_local_tools.InstallTests.test_batch_preflight_avoids_partial_install) ... ok
+test_core_self_contained (test_local_tools.InstallTests.test_core_self_contained) ... ok
+test_dry_run_writes_nothing (test_local_tools.InstallTests.test_dry_run_writes_nothing) ... ok
+test_existing_target_not_overwritten (test_local_tools.InstallTests.test_existing_target_not_overwritten) ... ok
+test_reject_core_plus_specialist (test_local_tools.InstallTests.test_reject_core_plus_specialist) ... ok
+test_reject_duplicate (test_local_tools.InstallTests.test_reject_duplicate) ... ok
+test_reject_inside_source (test_local_tools.InstallTests.test_reject_inside_source) ... ok
+test_reject_symlink_target (test_local_tools.InstallTests.test_reject_symlink_target) ... ok
+test_reject_unknown (test_local_tools.InstallTests.test_reject_unknown) ... ok
+test_specialists_only (test_local_tools.InstallTests.test_specialists_only) ... ok
+test_bom_and_korean (test_local_tools.NormalizeTests.test_bom_and_korean) ... ok
+test_case_variant_not_merged (test_local_tools.NormalizeTests.test_case_variant_not_merged) ... ok
+test_cli_refuses_output_overwrite (test_local_tools.NormalizeTests.test_cli_refuses_output_overwrite) ... ok
+test_duplicate_header (test_local_tools.NormalizeTests.test_duplicate_header) ... ok
+test_empty_and_unknown_dates_remain_unknown (test_local_tools.NormalizeTests.test_empty_and_unknown_dates_remain_unknown) ... ok
+test_example_preserves_four_records_and_duplicate (test_local_tools.NormalizeTests.test_example_preserves_four_records_and_duplicate) ... ok
+test_formula_is_inert_text (test_local_tools.NormalizeTests.test_formula_is_inert_text) ... ok
+test_invalid_email_stays_visible (test_local_tools.NormalizeTests.test_invalid_email_stays_visible) ... ok
+test_invalid_limit (test_local_tools.NormalizeTests.test_invalid_limit) ... ok
+test_limit_no_truncated_success (test_local_tools.NormalizeTests.test_limit_no_truncated_success) ... ok
+test_malformed_field_count (test_local_tools.NormalizeTests.test_malformed_field_count) ... ok
+test_missing_addresses_do_not_deduplicate (test_local_tools.NormalizeTests.test_missing_addresses_do_not_deduplicate) ... ok
+test_missing_required_header (test_local_tools.NormalizeTests.test_missing_required_header) ... ok
+test_multiline_text_remains_one_record (test_local_tools.NormalizeTests.test_multiline_text_remains_one_record) ... ok
+test_no_permission_or_verification_inferred (test_local_tools.NormalizeTests.test_no_permission_or_verification_inferred) ... ok
+test_plus_tag_preserved (test_local_tools.NormalizeTests.test_plus_tag_preserved) ... ok
+test_short_field_count (test_local_tools.NormalizeTests.test_short_field_count) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.942s
+
+OK

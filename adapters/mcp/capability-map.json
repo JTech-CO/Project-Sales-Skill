@@ -1,0 +1,88 @@
+{
+  "schema_version": "0.1.0",
+  "status": "integration-contract-not-a-running-server",
+  "execution": "draft-only",
+  "capabilities": [
+    {
+      "capability": "web.search",
+      "purpose": "Search public business information",
+      "effect": "read",
+      "cost": "provider-dependent",
+      "tool_name": null,
+      "account_ref": null
+    },
+    {
+      "capability": "product.read",
+      "purpose": "Read supplied or authorized product content",
+      "effect": "read",
+      "cost": "provider-dependent",
+      "tool_name": null,
+      "account_ref": null
+    },
+    {
+      "capability": "companies.search",
+      "purpose": "Search authorized business sources",
+      "effect": "read",
+      "cost": "possibly-metered",
+      "tool_name": null,
+      "account_ref": null
+    },
+    {
+      "capability": "contacts.read",
+      "purpose": "Read an authorized contact/CRM list",
+      "effect": "read",
+      "cost": "possibly-metered",
+      "tool_name": null,
+      "account_ref": null
+    },
+    {
+      "capability": "email.verify",
+      "purpose": "Read a permitted provider verification result",
+      "effect": "read",
+      "cost": "possibly-metered",
+      "tool_name": null,
+      "account_ref": null
+    },
+    {
+      "capability": "threads.read",
+      "purpose": "Read an authorized sales thread",
+      "effect": "read",
+      "cost": "provider-dependent",
+      "tool_name": null,
+      "account_ref": null
+    },
+    {
+      "capability": "calendar.availability.read",
+      "purpose": "Read permitted free/busy data",
+      "effect": "read",
+      "cost": "provider-dependent",
+      "tool_name": null,
+      "account_ref": null
+    },
+    {
+      "capability": "bookings.read",
+      "purpose": "Read an actual booking record",
+      "effect": "read",
+      "cost": "provider-dependent",
+      "tool_name": null,
+      "account_ref": null
+    },
+    {
+      "capability": "campaigns.metrics.read",
+      "purpose": "Read observed campaign outcomes",
+      "effect": "read",
+      "cost": "provider-dependent",
+      "tool_name": null,
+      "account_ref": null
+    }
+  ],
+  "blocked_actions": [
+    "send_message",
+    "save_remote_draft",
+    "update_crm",
+    "create_invitation",
+    "update_suppression",
+    "schedule_followup"
+  ],
+  "note": "Null bindings are intentionally unconfigured. Resolve actual tool schemas and permissions in the host."
+}

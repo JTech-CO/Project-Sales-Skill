@@ -1,0 +1,22 @@
+{
+  "name": "project-sales",
+  "title": "Project Sales",
+  "version": "0.1.0",
+  "release_date": "2026-09-16",
+  "execution": "draft-only",
+  "primary_skill": "SKILL.md",
+  "lite": {
+    "en": "LITE.md",
+    "ko": "LITE-KR.md"
+  },
+  "specialists": [
+    "discovery",
+    "qualification",
+    "outreach",
+    "triage",
+    "handoff",
+    "review"
+  ],
+  "license_status": "not-selected",
+  "runtime_dependencies": []
+}

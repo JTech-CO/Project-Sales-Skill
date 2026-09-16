@@ -1,0 +1,5 @@
+company,domain,contact_name,role,email,source_url,collected_at
+Example QA,qa.example,Mina,QA Lead,mina@qa.example,,
+Example QA,qa.example,Mina,QA Lead,mina@qa.example,,
+Example Studio,studio.example,Jin,Founder,jin+qa@studio.example,,
+Unknown Company,unknown.example,,,,,

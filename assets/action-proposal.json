@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "status": "proposal_only",
+  "execution_authorized": false,
+  "proposal_id": "proposal-example-001",
+  "workspace_ref": null,
+  "account_ref": null,
+  "action": "save_remote_draft",
+  "recipient_refs": [
+    "contact-example-001"
+  ],
+  "content_version": "draft-1",
+  "content": {
+    "subject": "Example QA checklist",
+    "body": "[Reviewed message content goes here.]",
+    "field_changes": {},
+    "attachments": [],
+    "links": []
+  },
+  "requested_timing": null,
+  "evidence_refs": [
+    "evidence-example-001"
+  ],
+  "unresolved_checks": [
+    "Resolve the actual workspace/account.",
+    "Replace the draft placeholder.",
+    "Confirm exact recipient and contact-policy status.",
+    "A separate trusted executor must obtain and verify authorization."
+  ],
+  "estimated_cost": null,
+  "note": "Fictional template. Inert data only; nothing was saved, approved, scheduled, or sent."
+}

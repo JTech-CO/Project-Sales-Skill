@@ -1,0 +1,11 @@
+{
+  "status": "not_run",
+  "model": null,
+  "host": null,
+  "condition": null,
+  "case_id": null,
+  "observed_tool_calls": [],
+  "observed_loaded_references": [],
+  "criterion_results": {},
+  "notes": "Template only. No live-model evaluation is claimed."
+}

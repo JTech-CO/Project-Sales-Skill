@@ -1,0 +1,78 @@
+{
+  "date": "2026-09-16",
+  "environment": {
+    "python": "3.13.5",
+    "node": "v22.16.0",
+    "platform": "Linux x86_64"
+  },
+  "offline_unit_tests": {
+    "python": {
+      "passed": 27,
+      "failed": 0
+    },
+    "node": {
+      "passed": 21,
+      "failed": 0
+    }
+  },
+  "schema_and_yaml_checks": {
+    "ok": true,
+    "schemas_compiled": 3,
+    "valid_examples": 3,
+    "invalid_examples_rejected": 7,
+    "skill_frontmatter": 7,
+    "openai_ui_metadata": 7,
+    "authorization_or_truth_verified": false
+  },
+  "app_smoke": {
+    "title": "Project Sales",
+    "execution": "draft-only",
+    "modules": [
+      "triage"
+    ],
+    "loadedPaths": [
+      "LITE-KR.md",
+      "references/TRIAGE.md"
+    ],
+    "instructionCharacters": 4537,
+    "fictionalMessagesRead": 2,
+    "modelCalled": false,
+    "externalNetworkUsed": false,
+    "remoteChangesMade": false
+  },
+  "distribution_archives": [
+    {
+      "archive": "project-sales-core.zip",
+      "crc_ok": true,
+      "standalone_skills": 1,
+      "files": 18,
+      "local_links_resolved": 24,
+      "external_reference_required": false
+    },
+    {
+      "archive": "project-sales-specialists.zip",
+      "crc_ok": true,
+      "standalone_skills": 6,
+      "files": 24,
+      "local_links_resolved": 6,
+      "external_reference_required": false
+    }
+  ],
+  "python_3_10_syntax_checks": {
+    "files": 6,
+    "passed": true,
+    "runtime_3_10_tested": false
+  },
+  "model_evaluation": {
+    "cases_provided": 30,
+    "executed": 0,
+    "status": "not_run"
+  },
+  "not_verified": [
+    "Native ChatGPT/Codex/Claude installation UI",
+    "Windows/macOS runtime execution",
+    "Live model quality and routing",
+    "Live provider and account connectivity",
+    "Production authorization, suppression, budgeting, scheduling, or mail delivery"
+  ]
+}

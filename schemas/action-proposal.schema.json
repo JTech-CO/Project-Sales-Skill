@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "urn:project-sales:action-proposal:0.1.0",
+  "title": "Project Sales action proposal",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "status": {
+      "const": "proposal_only"
+    },
+    "execution_authorized": {
+      "const": false
+    },
+    "proposal_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "workspace_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "account_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "action": {
+      "enum": [
+        "send_message",
+        "save_remote_draft",
+        "update_crm",
+        "create_invitation",
+        "update_suppression",
+        "schedule_followup"
+      ]
+    },
+    "recipient_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "content_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "subject": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "body": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "field_changes": {
+          "type": "object"
+        },
+        "attachments": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "subject",
+        "body",
+        "field_changes",
+        "attachments",
+        "links"
+      ]
+    },
+    "requested_timing": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "unresolved_checks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "estimated_cost": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            },
+            "basis": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "amount",
+            "currency",
+            "basis"
+          ]
+        }
+      ]
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "execution_authorized",
+    "proposal_id",
+    "workspace_ref",
+    "account_ref",
+    "action",
+    "recipient_refs",
+    "content_version",
+    "content",
+    "requested_timing",
+    "evidence_refs",
+    "unresolved_checks",
+    "estimated_cost",
+    "note"
+  ]
+}

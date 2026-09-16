@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "urn:project-sales:handoff:0.1.0",
+  "title": "Project Sales conversation handoff",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "handoff_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "project_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "thread_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "contact_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "expressed_need": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "commitments": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "unknowns": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "primary_intent": {
+      "enum": [
+        "positive_interest",
+        "meeting_intent",
+        "courtesy",
+        "question",
+        "not_now",
+        "rejection",
+        "opt_out",
+        "out_of_office",
+        "auto_reply",
+        "wrong_contact",
+        "delivery_failure",
+        "ambiguous"
+      ]
+    },
+    "booking": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "state": {
+          "enum": [
+            "not_discussed",
+            "meeting_intent",
+            "link_shared",
+            "time_proposed",
+            "confirmed",
+            "cancelled",
+            "held",
+            "unknown"
+          ]
+        },
+        "booking_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "starts_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "timezone": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "required": [
+        "state",
+        "booking_ref",
+        "starts_at",
+        "timezone",
+        "evidence_refs"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "state": {
+                "enum": [
+                  "confirmed",
+                  "held"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "starts_at": {
+                "type": "string",
+                "format": "date-time"
+              },
+              "timezone": {
+                "type": "string",
+                "minLength": 1
+              },
+              "evidence_refs": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "next_owner": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "proposed_next_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "needs_human_review": {
+      "type": "boolean"
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "remote_changes_made": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "handoff_id",
+    "project_ref",
+    "thread_ref",
+    "contact_ref",
+    "summary",
+    "expressed_need",
+    "commitments",
+    "unknowns",
+    "primary_intent",
+    "booking",
+    "next_owner",
+    "proposed_next_action",
+    "needs_human_review",
+    "evidence_refs",
+    "remote_changes_made"
+  ]
+}

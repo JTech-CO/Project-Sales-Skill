@@ -1,0 +1,19 @@
+{
+  "fictional": true,
+  "thread_id": "thread-example-001",
+  "messages": [
+    {
+      "id": "message-1",
+      "direction": "outbound",
+      "author": "sender@example.invalid",
+      "body": "Would a sample QA checklist be useful?"
+    },
+    {
+      "id": "message-2",
+      "direction": "inbound",
+      "author": "mina@qa.example",
+      "body": "Yes, please send the sample. We can discuss a meeting after reviewing it."
+    }
+  ],
+  "note": "Local fixture only. No real message was sent. No appointment is confirmed."
+}

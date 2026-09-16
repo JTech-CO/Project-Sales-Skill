@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "schemas_compiled": 3,
+  "valid_examples": 3,
+  "invalid_examples_rejected": 7,
+  "skill_frontmatter": 7,
+  "openai_ui_metadata": 7,
+  "authorization_or_truth_verified": false
+}

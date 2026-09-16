@@ -1,0 +1,28 @@
+{
+  "schema_version": "0.1.0",
+  "handoff_id": "handoff-example-001",
+  "project_ref": "project-example",
+  "thread_ref": "thread-example-001",
+  "contact_ref": "contact-example-001",
+  "summary": "A fictional prospect asks for a sample QA checklist.",
+  "expressed_need": "Review a sample before discussing a meeting.",
+  "commitments": [],
+  "unknowns": [
+    "The budget, purchase authority, and timing have not been established."
+  ],
+  "primary_intent": "positive_interest",
+  "booking": {
+    "state": "not_discussed",
+    "booking_ref": null,
+    "starts_at": null,
+    "timezone": null,
+    "evidence_refs": []
+  },
+  "next_owner": null,
+  "proposed_next_action": "Draft a short reply with a real sample when available.",
+  "needs_human_review": false,
+  "evidence_refs": [
+    "thread-example-001:message-2"
+  ],
+  "remote_changes_made": false
+}

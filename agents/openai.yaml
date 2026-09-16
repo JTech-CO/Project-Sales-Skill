@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Sales"
+  short_description: "Evidence-led B2B sales, from research to handoff"
+  default_prompt: "Use $project-sales for the requested B2B sales task. Use only the needed capability and return drafts, evidence, and next actions without remote writes."
+policy:
+  allow_implicit_invocation: true

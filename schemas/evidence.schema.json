@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "$id": "urn:project-sales:evidence:0.1.0",
+  "title": "Project Sales evidence record",
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "evidence_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "observed",
+        "user_supplied",
+        "hypothesis",
+        "unknown"
+      ]
+    },
+    "source_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "observed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "sensitive_data_included": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "evidence_id",
+    "claim",
+    "kind",
+    "source_ref",
+    "observed_at",
+    "limitations",
+    "sensitive_data_included"
+  ]
+}

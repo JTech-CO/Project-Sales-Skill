@@ -1,0 +1,6 @@
+interface:
+  display_name: "Project Sales: Reply triage"
+  short_description: "Focused, evidence-led B2B sales assistance"
+  default_prompt: "Use $project-sales-triage for this task. Return evidence-grounded drafts or analysis, not remote writes."
+policy:
+  allow_implicit_invocation: true

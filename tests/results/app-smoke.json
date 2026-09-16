@@ -1,0 +1,16 @@
+{
+  "title": "Project Sales",
+  "execution": "draft-only",
+  "modules": [
+    "triage"
+  ],
+  "loadedPaths": [
+    "LITE-KR.md",
+    "references/TRIAGE.md"
+  ],
+  "instructionCharacters": 4537,
+  "fictionalMessagesRead": 2,
+  "modelCalled": false,
+  "externalNetworkUsed": false,
+  "remoteChangesMade": false
+}
