@@ -1,8 +1,8 @@
 {
   "name": "project-sales",
-  "title": "Project Sales",
-  "version": "0.1.0",
-  "release_date": "2026-09-16",
+  "title": "Project Sales Skill",
+  "version": "0.1.1",
+  "release_date": "2026-09-17",
   "execution": "draft-only",
   "primary_skill": "SKILL.md",
   "lite": {
@@ -17,6 +17,8 @@
     "handoff",
     "review"
   ],
-  "license_status": "not-selected",
-  "runtime_dependencies": []
+  "runtime_dependencies": [],
+  "repository": "https://github.com/JTech-CO/Project-Sales-Skill/",
+  "website_entry": "index.html",
+  "license": "MIT"
 }

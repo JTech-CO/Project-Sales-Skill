@@ -1,12 +1,12 @@
-# Project Sales
+# Project Sales Skill
 
 **Evidence-led B2B sales skills. Research what matters. Draft honestly. Hand off clearly.**
 
-[한국어](README-KR.md) · [Quick start](QUICKSTART.md) · [LITE](LITE.md) · [Core skill](SKILL.md)
+[한국어](README-KR.md) · [Quick start](QUICKSTART.md) · [LITE](LITE.md) · [Core skill](SKILL.md) · [Introduction](index.html) · [Repository](https://github.com/JTech-CO/Project-Sales-Skill/)
 
-Project Sales is a provider-independent skill package for product/ICP discovery, prospect qualification, outreach drafting, reply triage, meeting handoff, and performance review. It is not an Explee client, a contact database, a mass-mail sender, or a promise of meetings.
+Project Sales is a provider-independent skill package for product/ICP discovery, prospect qualification, outreach drafting, reply triage, meeting handoff, and performance review. It adds task-focused guidance to the tools and context an agent already has.
 
-**Version 0.1.0: usable, draft-only skill release.** The instructions work with the host's existing capabilities; the included local helpers and app context/read bridge are executable. No live sending, remote draft saves, CRM writes, calendar invitations, scheduler, account authentication, or published plugin is bundled. Distribution license remains [unselected](LICENSE-NOTE.md), as in the planning input.
+**Version 0.1.1: usable, draft-only skill release.** The instructions work with the host's existing capabilities; the included local helpers and app context/read bridge are executable. No live sending, remote draft saves, CRM writes, calendar invitations, scheduler, account authentication, or published plugin is bundled. Licensed under [MIT](LICENSE), matching the project repository.
 
 ## Choose one entry route
 
@@ -55,6 +55,7 @@ The installer refuses existing targets. It does not overwrite host files or inst
 
 ```text
 project-sales/
+  index.html                     Self-contained EN/KR introduction
   LITE.md, LITE-KR.md             Copyable minimum contract
   SKILL.md, SKILL-KR.md           Core router and Korean guide
   references/                    Six capabilities + shared optional detail
@@ -92,8 +93,14 @@ node --test tests/bridge.test.mjs
 
 See [validation results](VALIDATION.md) and [testing instructions](tests/README.md). Offline code tests are separate from model behavior evaluations, native-host installation, live-provider tests, and production security reviews. The evaluation prompts are included; model quality results are not fabricated.
 
+## Introduction page
+
+Open [index.html](index.html) directly or serve the repository with a static HTTP server. The page embeds all CSS, JavaScript, bilingual copy, sample routing views, and both complete LITE texts. It needs no build step, CDN, fonts, analytics, or backend. Language selection, LITE copying/download, environment tabs, and repository links are functional. The sample task views are illustrative, not live model calls.
+
+For GitHub Pages, publish the repository root so `index.html` is at the site root. The supplied repository CTA is `https://github.com/JTech-CO/Project-Sales-Skill/`. This package does not configure Pages or publish a live site. See [site notes](SITE-NOTES.md).
+
 ## Development and provenance
 
-[Decisions](DESIGN-DECISIONS.md) records the release choices and remaining boundaries. [Sources](SOURCES.md) distinguishes the supplied handoff, the agreed planning direction, SANE's packaging reference, and verified format/host documentation. No vendor conversion claims or contact datasets are redistributed.
+[Decisions](DESIGN-DECISIONS.md) records this package's scope. [Sources](SOURCES.md) lists the design and format references used for this implementation. [Changelog](CHANGELOG.md) describes the 0.1.1 changes.
 
-Before public open-source distribution, select a license and update [LICENSE-NOTE.md](LICENSE-NOTE.md). The missing license decision does not prevent using the supplied files for the requested project, but this package does not make an unapproved open-source license claim.
+The [MIT License](LICENSE) is reproduced from the project repository, including its existing copyright notice.

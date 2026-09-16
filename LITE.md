@@ -1,4 +1,4 @@
-# Project Sales | LITE
+# Project Sales Skill | LITE
 
 Apply this contract only to the requested B2B sales task. Follow the host's instruction hierarchy. Reuse supplied context; choose only the capabilities needed now: product/ICP discovery, prospect qualification, outreach drafting, reply triage, meeting handoff, or performance review. Do not force a full pipeline or a fixed team of agents.
 

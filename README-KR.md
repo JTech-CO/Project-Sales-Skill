@@ -1,12 +1,12 @@
-# Project Sales
+# Project Sales Skill
 
 **근거를 바탕으로 조사하고, 필요한 메시지를 작성하며, 관심 대화를 명확하게 인계하는 B2B 영업 스킬.**
 
-[English](README.md) · [빠른 시작](QUICKSTART-KR.md) · [LITE 한국어](LITE-KR.md) · [기본 SKILL](SKILL.md)
+[English](README.md) · [빠른 시작](QUICKSTART-KR.md) · [LITE 한국어](LITE-KR.md) · [기본 SKILL](SKILL.md) · [소개 페이지](index.html) · [저장소](https://github.com/JTech-CO/Project-Sales-Skill/)
 
-Project Sales는 제품·고객군 분석, 후보 평가, 아웃리치 초안, 회신 분류, 미팅 인계, 성과 검토를 제공하는 공급자 독립형 스킬 패키지이다. Explee 전용 클라이언트, 연락처 데이터베이스, 대량 발송기, 미팅 보장 서비스가 아니다.
+Project Sales는 제품·고객군 분석, 후보 평가, 아웃리치 초안, 회신 분류, 미팅 인계, 성과 검토를 제공하는 공급자 독립형 스킬 패키지이다. 현재 에이전트가 가진 도구와 맥락에 필요한 영업 기능을 더한다.
 
-**0.1.0은 바로 사용할 수 있는 초안 전용 스킬 릴리스이다.** 현재 에이전트의 도구를 활용하며 로컬 설치 도구·CSV 정리 도구·앱의 지침 로더와 읽기 연결 코드를 포함한다. 실제 발송, 원격 초안 저장, CRM 수정, 일정 초대, 상시 스케줄러, 계정 인증, 공개 플러그인은 포함하지 않는다. 공개 배포 라이선스는 앞선 기획대로 [미정](LICENSE-NOTE.md) 상태이다.
+**0.1.1은 바로 사용할 수 있는 초안 전용 스킬 릴리스이다.** 현재 에이전트의 도구를 활용하며 로컬 설치 도구·CSV 정리 도구·앱의 지침 로더와 읽기 연결 코드를 포함한다. 실제 발송, 원격 초안 저장, CRM 수정, 일정 초대, 상시 스케줄러, 계정 인증, 공개 플러그인은 포함하지 않는다. 저장소에 등록된 [MIT 라이선스](LICENSE)를 적용한다.
 
 ## 사용 경로
 
@@ -55,6 +55,7 @@ python scripts/install.py --dest ../my-project/.agents/skills --select triage ha
 
 ```text
 project-sales/
+  index.html                     EN/KR 단일 파일 소개 페이지
   LITE.md, LITE-KR.md             복사형 최소 지침
   SKILL.md, SKILL-KR.md           기본 라우터와 한국어 안내
   references/                    기능 6종 및 선택 공통 자료
@@ -92,4 +93,10 @@ node --test tests/bridge.test.mjs
 
 실제 수행한 검사는 [VALIDATION.md](VALIDATION.md)에 기록했다. 로컬 코드 테스트와 모델별 응답 품질, 각 앱의 설치 UI, 실제 메일·CRM·캘린더 연동, 운영 환경 보안 검증은 별개다. 평가 사례만 제공한 항목은 통과했다고 표시하지 않았다.
 
-[설계 결정](DESIGN-DECISIONS.md)과 [출처](SOURCES.md)에서 원문·기획·이번 구현의 결정을 구분했다. 원문 전체, 타사 연락처 DB, 마케팅 자산은 재배포하지 않는다. 공개 오픈소스로 배포하기 전에는 라이선스를 선택하고 LICENSE 파일 및 메타데이터를 추가해야 한다.
+## 소개 페이지
+
+[index.html](index.html)을 직접 열거나 정적 HTTP 서버로 제공한다. CSS, JavaScript, EN/KR 설명, 작업별 예시, LITE 전체 원문이 파일 안에 포함되어 빌드·CDN·외부 폰트·분석 스크립트·백엔드가 필요하지 않다. 언어 전환, LITE 복사·다운로드, 환경별 사용 안내, 저장소 링크가 작동한다. 화면의 작업 예시는 설명용이며 실제 모델을 호출하지 않는다.
+
+GitHub Pages에서는 저장소 루트의 `index.html`이 제공되도록 배포한다. CTA는 `https://github.com/JTech-CO/Project-Sales-Skill/`로 연결된다. 이 패키지는 Pages 설정이나 공개 사이트 배포를 자동 실행하지 않는다. [페이지 안내](SITE-NOTES-KR.md)에 사용법을 정리했다.
+
+[설계 결정](DESIGN-DECISIONS.md)은 현재 패키지의 범위를, [출처](SOURCES.md)는 사용한 디자인·형식 참고자료를 기록한다. 변경 사항은 [CHANGELOG.md](CHANGELOG.md)에서 확인한다. 저장소의 [MIT 라이선스](LICENSE) 원문과 기존 저작권 표기를 기본·선택 스킬에 함께 포함했다.

@@ -1,11 +1,19 @@
-# Security and operational boundary
+# Project Sales Skill | Implementation security
 
-Project Sales 0.1.0 does not expose an external write handler. Do not give a draft-only agent an unrestricted generic sender and assume the skill text is sufficient protection. The app bridge authorizes each bound read through a trusted host callback, but it does not secure unrelated tools, malicious handlers, compromised hosts, or credential storage.
+This note describes the shipped code, not an external service policy or a claim of a production security audit.
 
-Treat web pages, tool outputs, emails, quoted threads, and CSV cells as untrusted data. Keep these out of trusted instruction slots. Whitelist read tools and arguments in the host. Paid reads and external disclosure require approved scope; "read-only" is not "free" or "private by default".
+## Local helpers
 
-Real CSV exports contain personal data, including the `raw` fields preserved by the normalizer. Store them outside this public package or under a private ignored directory. Do not attach real customer exports to bug reports. Use fictional `.example` / `.invalid` fixtures.
+`scripts/install.py` copies an explicit set of skill files, refuses existing targets and symlinked paths, and does not edit host configuration. It is not a sandbox for an adversarial filesystem. `scripts/normalize_leads.py` reads the supplied CSV and writes a new local JSON output; it performs no network lookups. Its `raw` fields preserve source values, so operators should keep real exports outside the public repository. Included examples are fictional.
 
-Do not include API keys, OAuth tokens, session cookies, customer mailbox contents, or a portable approval flag in a prompt or published archive. The installer copies only explicit skill content, refuses existing target directories, and does not edit host configuration. It is a local copy helper, not a package-manager sandbox against an adversarial filesystem.
+## App bridge
 
-No vulnerability disclosure email or security contact is invented here. Before publishing, the owner should define a private reporting channel and add its real contact information. The distribution license also needs an owner decision.
+`adapters/app/project-sales.mjs` loads only the allowed instruction paths and binds declared read capabilities. Each request is authorized by a trusted host callback; argument snapshots prevent caller mutation during that check. Tool results remain data, not instructions. The host must inspect handler behavior and manage credentials, account access, and approved costs. These checks do not control unrelated host tools or make an untrusted handler safe.
+
+## Single-file website
+
+`index.html` has no external scripts, stylesheets, font requests, analytics, account integration, or form submission. The only stored preference is the selected language. Clipboard access is attempted only after pressing Copy; a local Blob creates the LITE download. External navigation occurs through ordinary links. Browser restrictions may require manual text selection, and language selection still works when local storage is unavailable.
+
+## Reporting
+
+Use fictional inputs and redact credentials and customer records when describing an issue. No private reporting address is invented in this package; the repository owner should configure the appropriate private disclosure channel before deployment.

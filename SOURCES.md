@@ -1,27 +1,25 @@
-# Sources and provenance
+# Project Sales Skill | References
 
-Reviewed for packaging on **2026-09-16**. External documentation can change. Source-derived requirements, the prior planning decisions, and newly authored implementation choices are separated below.
+Reference check: **2026-09-17**. The six-capability scope, bilingual LITE, independent skill entrypoints, web/app/CLI adapters, and single-file introduction are Project Sales Skill requirements. Product wording, examples, implementation, and test cases are maintained within this project.
 
-## Supplied material
+## Design and packaging
 
-**AutoGTM-class Outbound Agent.md**, supplied in the conversation. Relevant source sections: 0 (pipeline rather than vendor clone), 7-8 (capabilities and open-source boundaries), 10 (control failures to avoid), 11-12 (review dimensions and honest outcomes), 13 (undecided items), and 14 (handoff guidance). The original is not redistributed in this ZIP.
+- [SANE SKILL.md](https://github.com/JTech-CO/SANE/blob/main/SKILL.md), inspected blob `b581fa1c8e8873861ce06cb2e9dc6523550ae3df`: task-first hierarchy, readable type, restrained styling, truthful examples, accessible controls, and proportional verification.
+- [SANE LITE.md](https://github.com/JTech-CO/SANE/blob/main/LITE.md): separation of pasteable guidance from the installable skill and optional references.
+- [SANE introduction](https://github.com/JTech-CO/SANE/blob/main/index.html): reference for a light editorial layout, EN/KR switching, and a clear repository CTA. Project Sales Skill has its own page implementation and content.
 
-The immediately preceding Project Sales planning answer supplied the six-capability layout, minimal router, optional host adapters, portable evidence/state, draft-only initial release, and separation between instruction text and host-enforced execution. The current user request authorizes building the skill ZIP, names Project Sales, requests SANE-style LITE, and requires web/app/CLI applicability.
+## Format and host references
 
-This package does not adopt the vendor's marketing statistics, reproduce contact databases, repeat user-review allegations, or claim a new vendor audit. Contact-policy material is a review checklist, not an updated legal summary.
+- [Agent Skills specification](https://agentskills.io/specification): SKILL.md frontmatter, directory naming, optional resources, and progressive disclosure.
+- [OpenAI Build skills](https://developers.openai.com/codex/skills/) (redirects to ChatGPT Learn): host-specific discovery and installation documentation. Local paths and account support must match the selected host.
+- [Claude Code skills](https://code.claude.com/docs/en/skills): the `.claude/skills` installation convention and host-specific behavior.
 
-## Inspected packaging reference
+These references describe conventions, not certifications. This package does not claim native installation, model-quality benchmarks, live account integrations, or a production authorization service. Actual checks are documented in [VALIDATION.md](VALIDATION.md).
 
-- [JTech-CO/SANE LITE.md](https://github.com/JTech-CO/SANE/blob/main/LITE.md), inspected blob `90e69598aa19e5586d12c8287ba35ced79dd7fc6`.
-- [JTech-CO/SANE SKILL.md](https://github.com/JTech-CO/SANE/blob/main/SKILL.md), inspected blob `b581fa1c8e8873861ce06cb2e9dc6523550ae3df`.
+## Project location
 
-Adopted the separation of copyable LITE, a bounded native SKILL, and optional references. Project Sales wording, rules, fixtures, and helper code were newly authored; SANE's UI-design rules and visual assets are not copied.
+[Project Sales Skill repository](https://github.com/JTech-CO/Project-Sales-Skill/). The link is the requested destination; creating this package does not push files or enable hosting.
 
-## Format and host documentation
+## License record
 
-- [Agent Skills specification](https://agentskills.io/specification): directory structure, required name/description frontmatter, naming constraints, optional resources, progressive loading.
-- [OpenAI Build skills](https://developers.openai.com/codex/skills/) (redirects to ChatGPT Learn): local skill directories, optional `agents/openai.yaml`, and distinction between standalone skills and plugin distribution.
-- [OpenAI: Rethinking skills and prompts for GPT-6 Astra](https://developers.openai.com/blog/rethinking-skills-and-prompts-for-gpt-6-astra): concise task descriptions and a minimal root router for multi-workflow skills. This package makes no model-performance benchmark claim.
-- [Claude Code skills](https://code.claude.com/docs/en/skills): local `.claude/skills` placement and the distinction between local and other host environments.
-
-These sources informed file layout and usage notes. Native host installation, account connectivity, plugin publication, and model behavior were not proven by reading documentation or running local tests. See VALIDATION.md for the actual test boundary.
+[Project repository LICENSE](https://github.com/JTech-CO/Project-Sales-Skill/blob/main/LICENSE), inspected blob `d99edc870c8a854043ae4fb6edbea7e534a60d49`: MIT License, copyright 2026 JTech_CO. The same notice is included in the source package and independently installable skill folders.
