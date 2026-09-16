@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SPECIALISTS = ('discovery', 'qualification', 'outreach', 'triage', 'handoff', 'review')
-CORE_ITEMS = ('SKILL.md', 'SKILL-KR.md', 'LITE.md', 'LITE-KR.md', 'references', 'assets', 'agents', 'LICENSE-NOTE.md')
+CORE_ITEMS = ('SKILL.md', 'SKILL-KR.md', 'LITE.md', 'LITE-KR.md', 'references', 'assets', 'agents', 'LICENSE', 'LICENSE-NOTE.md')
 
 
 def _symlink_check(path: Path) -> None:

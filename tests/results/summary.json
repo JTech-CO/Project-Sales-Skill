@@ -1,21 +1,30 @@
 {
-  "date": "2026-09-16",
+  "release": "0.1.1",
+  "date": "2026-09-17",
   "environment": {
     "python": "3.13.5",
     "node": "v22.16.0",
-    "platform": "Linux x86_64"
+    "os": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "chromium": "Chromium 144.0.7559.96 built on Debian GNU/Linux 13 (trixie)"
   },
-  "offline_unit_tests": {
-    "python": {
-      "passed": 27,
-      "failed": 0
-    },
-    "node": {
-      "passed": 21,
-      "failed": 0
+  "python_unit_tests": {
+    "passed": 41,
+    "failed": 0,
+    "breakdown": {
+      "existing_local_helpers": 27,
+      "site_and_release_source": 14
     }
   },
-  "schema_and_yaml_checks": {
+  "node_unit_tests": {
+    "passed": 21,
+    "failed": 0
+  },
+  "browser": {
+    "passed": 42,
+    "failed": 0,
+    "mode": "Page.set_content; real rendered DOM and Blob downloads"
+  },
+  "schemas": {
     "ok": true,
     "schemas_compiled": 3,
     "valid_examples": 3,
@@ -24,55 +33,10 @@
     "openai_ui_metadata": 7,
     "authorization_or_truth_verified": false
   },
-  "app_smoke": {
-    "title": "Project Sales",
-    "execution": "draft-only",
-    "modules": [
-      "triage"
-    ],
-    "loadedPaths": [
-      "LITE-KR.md",
-      "references/TRIAGE.md"
-    ],
-    "instructionCharacters": 4537,
-    "fictionalMessagesRead": 2,
-    "modelCalled": false,
-    "externalNetworkUsed": false,
-    "remoteChangesMade": false
-  },
-  "distribution_archives": [
-    {
-      "archive": "project-sales-core.zip",
-      "crc_ok": true,
-      "standalone_skills": 1,
-      "files": 18,
-      "local_links_resolved": 24,
-      "external_reference_required": false
-    },
-    {
-      "archive": "project-sales-specialists.zip",
-      "crc_ok": true,
-      "standalone_skills": 6,
-      "files": 24,
-      "local_links_resolved": 6,
-      "external_reference_required": false
-    }
-  ],
-  "python_3_10_syntax_checks": {
-    "files": 6,
-    "passed": true,
-    "runtime_3_10_tested": false
-  },
-  "model_evaluation": {
-    "cases_provided": 30,
-    "executed": 0,
+  "model_evaluations": {
+    "fixtures": 30,
     "status": "not_run"
   },
-  "not_verified": [
-    "Native ChatGPT/Codex/Claude installation UI",
-    "Windows/macOS runtime execution",
-    "Live model quality and routing",
-    "Live provider and account connectivity",
-    "Production authorization, suppression, budgeting, scheduling, or mail delivery"
-  ]
+  "remote_writes": false,
+  "deployed": false
 }

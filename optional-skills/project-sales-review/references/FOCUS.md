@@ -20,7 +20,7 @@ Track confirmed bookings with evidence and a stable booking identity; one thread
 
 For period reporting, do not divide this week's replies by this week's sends when they belong to different cohorts without labeling it as an activity ratio rather than cohort conversion. Bookings after the window require explicit follow-up coverage. A 100% rate from one response is not robust evidence.
 
-Account for research/enrichment, verification, messaging, and model costs when available. Do not silently mix currencies or assume free tool use. State conversion rates and dates when the user provides an exchange rate; otherwise keep currencies separate. Do not set expected conversion to the historical vendor claims in the source handoff.
+Account for research/enrichment, verification, messaging, and model costs when available. Do not silently mix currencies or assume free tool use. State conversion rates and dates when the user provides an exchange rate; otherwise keep currencies separate. Set expectations from the supplied evidence and observation scope; do not invent performance baselines.
 
 ## Improvement
 

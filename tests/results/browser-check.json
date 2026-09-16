@@ -1,0 +1,184 @@
+{
+  "mode": "Chromium DOM rendering via Playwright Page.set_content",
+  "version": "0.1.1",
+  "passed": 42,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "English default without stored preference",
+      "status": "passed"
+    },
+    {
+      "name": "en: title and LITE match the source",
+      "status": "passed"
+    },
+    {
+      "name": "en: no page overflow at 320px",
+      "status": "passed"
+    },
+    {
+      "name": "en: no page overflow at 390px",
+      "status": "passed"
+    },
+    {
+      "name": "en: no page overflow at 768px",
+      "status": "passed"
+    },
+    {
+      "name": "en: no page overflow at 1440px",
+      "status": "passed"
+    },
+    {
+      "name": "en: discover example routing",
+      "status": "passed"
+    },
+    {
+      "name": "en: draft example routing",
+      "status": "passed"
+    },
+    {
+      "name": "en: reply example routing",
+      "status": "passed"
+    },
+    {
+      "name": "en: web setup tab",
+      "status": "passed"
+    },
+    {
+      "name": "en: app setup tab",
+      "status": "passed"
+    },
+    {
+      "name": "en: cli setup tab",
+      "status": "passed"
+    },
+    {
+      "name": "en: actual Blob download matches source bytes",
+      "status": "passed"
+    },
+    {
+      "name": "ko: title and LITE match the source",
+      "status": "passed"
+    },
+    {
+      "name": "ko: no page overflow at 320px",
+      "status": "passed"
+    },
+    {
+      "name": "ko: no page overflow at 390px",
+      "status": "passed"
+    },
+    {
+      "name": "ko: no page overflow at 768px",
+      "status": "passed"
+    },
+    {
+      "name": "ko: no page overflow at 1440px",
+      "status": "passed"
+    },
+    {
+      "name": "ko: discover example routing",
+      "status": "passed"
+    },
+    {
+      "name": "ko: draft example routing",
+      "status": "passed"
+    },
+    {
+      "name": "ko: reply example routing",
+      "status": "passed"
+    },
+    {
+      "name": "ko: web setup tab",
+      "status": "passed"
+    },
+    {
+      "name": "ko: app setup tab",
+      "status": "passed"
+    },
+    {
+      "name": "ko: cli setup tab",
+      "status": "passed"
+    },
+    {
+      "name": "ko: actual Blob download matches source bytes",
+      "status": "passed"
+    },
+    {
+      "name": "320px expanded details and web setup stay within viewport",
+      "status": "passed"
+    },
+    {
+      "name": "320px expanded details and app setup stay within viewport",
+      "status": "passed"
+    },
+    {
+      "name": "320px expanded details and cli setup stay within viewport",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard tab navigation",
+      "status": "passed"
+    },
+    {
+      "name": "Keyboard tab End navigation",
+      "status": "passed"
+    },
+    {
+      "name": "Native details opens with keyboard",
+      "status": "passed"
+    },
+    {
+      "name": "Native details closes with pointer",
+      "status": "passed"
+    },
+    {
+      "name": "Copy fallback returns a truthful browser result",
+      "status": "passed"
+    },
+    {
+      "name": "Blocked copy exposes manual selection",
+      "status": "passed"
+    },
+    {
+      "name": "Blocked example copy selects full text",
+      "status": "passed"
+    },
+    {
+      "name": "200 percent root text has no page overflow",
+      "status": "passed"
+    },
+    {
+      "name": "Reduced-motion scrolling",
+      "status": "passed"
+    },
+    {
+      "name": "Repository CTAs use the requested destination",
+      "status": "passed"
+    },
+    {
+      "name": "No runtime asset requests",
+      "status": "passed"
+    },
+    {
+      "name": "No uncaught JavaScript errors",
+      "status": "passed"
+    },
+    {
+      "name": "Language switch when storage is blocked",
+      "status": "passed"
+    },
+    {
+      "name": "No-JavaScript English fallback",
+      "status": "passed"
+    }
+  ],
+  "not_verified": [
+    "HTTP/file URL navigation",
+    "Clipboard read-back to the operating system",
+    "Native localStorage persistence and URL deep-linking",
+    "Other browser engines and operating systems",
+    "Live repository navigation or deployment"
+  ],
+  "note": "Blob downloads are actual completed browser downloads, compared byte-for-byte. Forced clipboard failure is a simulated error path. No test invokes a model or external account."
+}

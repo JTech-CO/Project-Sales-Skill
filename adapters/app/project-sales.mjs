@@ -38,7 +38,7 @@ export async function loadContext({ readText, locale = 'en', modules = [] } = {}
     texts.push(text.trim());
   }
   return Object.freeze({
-    title: 'Project Sales', version: '0.1.0', execution: 'draft-only',
+    title: 'Project Sales', version: '0.1.1', execution: 'draft-only',
     locale, modules: Object.freeze(selected), paths: Object.freeze(paths),
     instructions: texts.join('\n\n'),
   });

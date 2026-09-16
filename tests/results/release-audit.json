@@ -1,0 +1,27 @@
+{
+  "release": "0.1.1",
+  "legacy_reference_matches": 0,
+  "scope": "Source paths and text, recursively expanded distribution contents and ZIP metadata; independent identity/provenance documents reviewed",
+  "scanned_records": 202,
+  "archives": [
+    {
+      "path": "dist/project-sales-core.zip",
+      "entries": 19,
+      "crc": "passed"
+    },
+    {
+      "path": "dist/project-sales-specialists.zip",
+      "entries": 30,
+      "crc": "passed"
+    }
+  ],
+  "standalone_skill_metadata_and_links": [
+    "project-sales",
+    "project-sales-discovery",
+    "project-sales-handoff",
+    "project-sales-outreach",
+    "project-sales-qualification",
+    "project-sales-review",
+    "project-sales-triage"
+  ]
+}

@@ -1,6 +1,6 @@
 # Prospect qualification
 
-Use for a supplied list, a named company, or requested company discovery. Use authorized business sources, user-provided CSV, existing CRM reads, or explicitly approved data providers. Do not build an email-harvesting engine or bypass access restrictions.
+Use for a supplied list, a named company, or requested company discovery. Use authorized business sources, user-provided CSV, existing CRM reads, or explicitly approved data providers. Limit each lookup to the requested business task and the access granted by the host.
 
 ## Keep four questions separate
 
@@ -27,4 +27,4 @@ Use `unknown` for missing verification and permission. Mark opted-out, paused, o
 
 ## Stop condition
 
-When a candidate is excluded or there is no credible fit, explain why. Research completeness is not an obligation to draft. Support useful company-level research even when person-level contact collection is unavailable or inappropriate.
+When a candidate is excluded or there is no credible fit, explain why. Research completeness is not an obligation to draft. Support useful company-level research even when an individual contact record is unavailable or outside the task scope.

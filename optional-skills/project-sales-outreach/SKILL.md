@@ -1,8 +1,9 @@
 ---
 name: project-sales-outreach
-description: Write or revise evidence-grounded B2B first-touch and follow-up drafts for supplied prospects. Use for sales email copy; not message sending, lead harvesting, or general marketing campaigns.
+description: Write or revise evidence-grounded B2B first-touch and follow-up drafts for supplied prospects. Use for sales email copy; not message sending or unrelated marketing campaigns.
+license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
   language: "en"
   execution: "draft-only"
 ---

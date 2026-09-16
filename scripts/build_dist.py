@@ -28,7 +28,7 @@ def build(output_dir: Path) -> list[dict]:
             files = sorted(p for p in source.rglob('*') if p.is_file())
             with zipfile.ZipFile(output,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as archive:
                 for path in files:
-                    info = zipfile.ZipInfo(path.relative_to(source).as_posix(),date_time=(2026,9,16,0,0,0))
+                    info = zipfile.ZipInfo(path.relative_to(source).as_posix(),date_time=(2026,9,17,0,0,0))
                     info.compress_type = zipfile.ZIP_DEFLATED
                     info.external_attr = 0o100644 << 16
                     archive.writestr(info,path.read_bytes())

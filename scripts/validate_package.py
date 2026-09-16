@@ -42,7 +42,7 @@ def check(root: Path = ROOT) -> dict:
     link_count = 0
     json_count = 0
     for p in paths:
-        if p.suffix in ('.md', '.mjs', '.py', '.json', '.yaml', '.txt'):
+        if p.suffix in ('.md', '.mjs', '.py', '.json', '.yaml', '.txt', '.html'):
             try:
                 text = p.read_text(encoding='utf-8')
             except UnicodeError:

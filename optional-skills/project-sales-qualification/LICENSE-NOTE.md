@@ -1,3 +1,3 @@
-# License decision pending
+# License
 
-The owner has not selected a distribution license for Project Sales 0.1.0. This notice is not a license grant. Select a license before a public open-source release.
+Project Sales Skill is distributed under the [MIT License](LICENSE). Keep the copyright and permission notice with copies or substantial portions of the software.

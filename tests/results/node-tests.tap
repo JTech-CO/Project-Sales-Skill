@@ -2,127 +2,127 @@ TAP version 13
 # Subtest: default loads LITE only
 ok 1 - default loads LITE only
   ---
-  duration_ms: 1.847363
+  duration_ms: 1.518472
   type: 'test'
   ...
 # Subtest: Korean plus one selected reference only
 ok 2 - Korean plus one selected reference only
   ---
-  duration_ms: 0.542582
+  duration_ms: 0.262025
   type: 'test'
   ...
 # Subtest: duplicate module is loaded once
 ok 3 - duplicate module is loaded once
   ---
-  duration_ms: 0.268495
+  duration_ms: 0.134784
   type: 'test'
   ...
 # Subtest: path traversal is not a module
 ok 4 - path traversal is not a module
   ---
-  duration_ms: 0.585335
+  duration_ms: 0.414065
   type: 'test'
   ...
 # Subtest: prototype key is not a module
 ok 5 - prototype key is not a module
   ---
-  duration_ms: 0.235875
+  duration_ms: 0.168835
   type: 'test'
   ...
 # Subtest: unsupported locale rejected
 ok 6 - unsupported locale rejected
   ---
-  duration_ms: 0.252755
+  duration_ms: 0.147082
   type: 'test'
   ...
 # Subtest: missing loader rejected
 ok 7 - missing loader rejected
   ---
-  duration_ms: 0.228614
+  duration_ms: 0.162976
   type: 'test'
   ...
 # Subtest: empty content fails rather than pretending loaded
 ok 8 - empty content fails rather than pretending loaded
   ---
-  duration_ms: 0.194473
+  duration_ms: 0.274014
   type: 'test'
   ...
 # Subtest: missing authorization callback rejected
 ok 9 - missing authorization callback rejected
   ---
-  duration_ms: 0.517568
+  duration_ms: 0.369137
   type: 'test'
   ...
 # Subtest: write capability cannot be registered
 ok 10 - write capability cannot be registered
   ---
-  duration_ms: 0.411947
+  duration_ms: 0.400795
   type: 'test'
   ...
 # Subtest: duplicate binding rejected
 ok 11 - duplicate binding rejected
   ---
-  duration_ms: 0.24504
+  duration_ms: 0.180032
   type: 'test'
   ...
 # Subtest: unavailable capability has no fallback
 ok 12 - unavailable capability has no fallback
   ---
-  duration_ms: 0.241299
+  duration_ms: 0.204328
   type: 'test'
   ...
 # Subtest: denied read never invokes handler
 ok 13 - denied read never invokes handler
   ---
-  duration_ms: 0.34313
+  duration_ms: 0.196998
   type: 'test'
   ...
 # Subtest: truthy string is not approval
 ok 14 - truthy string is not approval
   ---
-  duration_ms: 0.15306
+  duration_ms: 0.131819
   type: 'test'
   ...
 # Subtest: authorization checked every call
 ok 15 - authorization checked every call
   ---
-  duration_ms: 0.20327
+  duration_ms: 0.196035
   type: 'test'
   ...
 # Subtest: tool response remains untrusted data
 ok 16 - tool response remains untrusted data
   ---
-  duration_ms: 2.843868
+  duration_ms: 0.801269
   type: 'test'
   ...
 # Subtest: authorization mutation cannot change executed args
 ok 17 - authorization mutation cannot change executed args
   ---
-  duration_ms: 0.284829
+  duration_ms: 0.191819
   type: 'test'
   ...
 # Subtest: caller mutation during await cannot change executed args
 ok 18 - caller mutation during await cannot change executed args
   ---
-  duration_ms: 0.165986
+  duration_ms: 0.141373
   type: 'test'
   ...
 # Subtest: nonfinite and function arguments rejected
 ok 19 - nonfinite and function arguments rejected
   ---
-  duration_ms: 0.287805
+  duration_ms: 0.215866
   type: 'test'
   ...
 # Subtest: provider errors propagate without a second provider call
 ok 20 - provider errors propagate without a second provider call
   ---
-  duration_ms: 1.988943
+  duration_ms: 0.153722
   type: 'test'
   ...
 # Subtest: metadata exposes no handler or token
 ok 21 - metadata exposes no handler or token
   ---
-  duration_ms: 0.212955
+  duration_ms: 0.125319
   type: 'test'
   ...
 1..21
@@ -133,4 +133,4 @@ ok 21 - metadata exposes no handler or token
 # cancelled 0
 # skipped 0
 # todo 0
-# duration_ms 159.294
+# duration_ms 64.59242

@@ -1,15 +1,15 @@
-# Contact-policy review
+# Contact context
 
-This is a conservative review checklist, not jurisdictional legal advice, a current legal summary, or an automatic compliance preset. Project Sales does not decide that a contact is lawful. The original handoff identified jurisdiction, consent, sender identification, opt-out, platform terms, and data responsibility as areas to review; it did not supply a deployable legal rules engine.
+Use this reference only when the requested task involves contact readiness or a conversation's contact restrictions. It describes task inputs and host responsibilities, not a legal rules engine or country-specific clearance.
 
-## Information to request only when relevant
+## Keep the record explicit
 
-Identify purpose/channel, sender and recipient context, relevant jurisdictions, recipient type, address source, contact history, consent or other claimed basis with its evidence, opt-out status, required notices, and approved retention/data destinations. Message language does not determine jurisdiction. "B2B", "public email", "verified", "imported CSV", and "the operator approved it" are not blanket eligibility findings.
+Record the supplied business purpose, channel, source, verification method and date, contact history, known preferences, and any reviewed contact basis when relevant. Mark missing facts as unknown. Address syntax, current employment, customer fit, and contact permission are different questions.
 
-Use a reviewed, source-linked and dated host policy for the actual deployment. If the host has no current applicable policy or the evidence is incomplete, mark contact eligibility `unreviewed` and return analysis/drafts only. Do not automatically apply one country's rule to another. Re-check official sources and obtain appropriate legal review before implementing a live contact policy.
+Use only information relevant to the requested business task. Keep personal data and credentials out of public examples and shared outputs unless the task genuinely requires that information and the host permits it. The package's CSV normalizer does not discover new contacts or verify addresses remotely; it preserves the source values supplied by the operator.
 
-Avoid collecting unrelated sensitive personal information, inferring private traits, or using them for targeting. Do not scrape gated profiles, defeat rate limits, bypass CAPTCHAs, or expand an allowed business-data lookup into a personal dossier.
+## Host responsibility
 
-Propose recording opt-outs and limiting retention; do not claim that a remote record was changed. Keep tenant/account separation, access control, retention, and deletion outside prompts in a real application. If a record must be retained for suppression, the operator must define the minimum lawful record and access policy.
+The operator's deployment policy determines permissible data access, use, retention, and any future contact action. Do not infer a jurisdiction from message language or turn an imported flag into a verified policy decision. Where a review is absent, return useful analysis or drafts with `unreviewed` contact status.
 
-No country preset in this package returns "approved to send". A future executor must consume a reviewed policy decision from a trusted host, not a model's improvised legal conclusion.
+Treat explicit opt-outs and campaign pauses as reasons not to propose further promotional contact. A proposed record change remains a proposal until an authorized host confirms it. This release does not write contact preferences or execute messages.

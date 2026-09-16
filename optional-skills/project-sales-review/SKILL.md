@@ -1,8 +1,9 @@
 ---
 name: project-sales-review
 description: Review supplied B2B outreach outcomes and costs with explicit denominators and evidence. Use for campaign metrics and improvement hypotheses; not investment advice or campaign execution.
+license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
   language: "en"
   execution: "draft-only"
 ---

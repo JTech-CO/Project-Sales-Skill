@@ -98,7 +98,7 @@ def normalize(path: Path, max_rows: int = 10000) -> dict:
             'raw': raw,
         })
     return {
-        'schema_version': '0.1.0', 'execution': 'draft-only', 'source_file': path.name,
+        'schema_version': '0.1.1', 'execution': 'draft-only', 'source_file': path.name,
         'summary': {'records': len(records), 'exact_email_duplicates': sum(r['duplicate_of'] is not None for r in records),
                     'invalid_email_syntax': sum(r['email_syntax'] == 'invalid' for r in records)},
         'records': records,

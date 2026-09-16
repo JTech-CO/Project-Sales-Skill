@@ -1,8 +1,9 @@
 ---
 name: project-sales-triage
 description: Classify B2B sales replies and propose next actions from supplied or authorized threads. Use for interest, opt-outs, rejection, out-of-office, and ambiguity; not fresh prospect discovery.
+license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
   language: "en"
   execution: "draft-only"
 ---
